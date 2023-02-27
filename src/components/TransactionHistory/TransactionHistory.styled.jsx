@@ -36,19 +36,15 @@ export const TransactionTable = styled.table`
     }
 
     &:last-child {
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-bottom-radius: 4px;
 
       & td {
+        border-bottom: collapse;
+
         &:first-child {
           border-bottom-left-radius: 4px;
         }
-
-        &:last-child {
-          border-bottom-right-radius: 4px;
-        }
       }
-    }
   }
 
   & td {
@@ -66,6 +62,7 @@ export const TransactionTable = styled.table`
 
     &:last-child {
       border-right: none;
+      border-bottom-right-radius: 4px;
     }
   }
 `;
