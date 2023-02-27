@@ -1,6 +1,7 @@
 // component data imports
 import user from "data/user.json";
 import data from "data/data.json";
+import friends from "data/friends.json";
 import transactions from  "data/transactions.json";
 
 // global style and normalization imports
@@ -31,7 +32,7 @@ export default function App() {
 
       {/* <Statistics stats={data} /> */}
 
-      <FriendList />
+      <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />
 

@@ -1,12 +1,16 @@
-import PropTypes from "prop-types";
-import { Item, Status, Avatar, Name } from "./FriendListItem.styled";
+import PropTypes from 'prop-types';
+import { Status, Avatar, Name, Item } from './FriendListItem.styled';
 
+export default function FriendListItem({friend}) {
+  const { avatar, name, isOnline } = friend;
 
-export default function FriendListItem({ id, avatar, name, isOnline }) {
-  // add isOnline conditional styling
   return (
-    <Item key={id}>
-      {isOnline ? <Status style={{ backgroundColor: "green"}}></Status> : <Status></Status>}
+    <Item>
+      {isOnline ? (
+        <Status style={{ backgroundColor: 'green' }}></Status>
+      ) : (
+        <Status></Status>
+      )}
       <Avatar src={avatar} alt={name} width="48" />
       <Name>{name}</Name>
     </Item>
@@ -14,7 +18,6 @@ export default function FriendListItem({ id, avatar, name, isOnline }) {
 }
 
 FriendListItem.propTypes = {
-  id: PropTypes.number,
   avatar: PropTypes.string,
   name: PropTypes.string,
   isOnline: PropTypes.bool,
