@@ -22,7 +22,7 @@ export const GlobalStyle = (props) => (
         padding: 200px 0;
 
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
 
         width: 100%;
         height: 100%;

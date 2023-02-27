@@ -49,6 +49,8 @@ export const Stats = styled.ul`
   margin: 0;
   padding: 0;
 
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   background-color: #deeff5;
 
   & li {
@@ -57,11 +59,12 @@ export const Stats = styled.ul`
     padding: 10px;
 
     border: 1px solid #d3d3d3;
-    border-right: none;
-    border-bottom: none;
 
-    &:first-child {
-      border-left: none;
+    border-right: transparent;
+    border-bottom: transparent;
+
+    &:first-of-type {
+      border-left: transparent;
     }
   }
 `;

@@ -17,12 +17,12 @@ export const TransactionTable = styled.table`
 
     text-transform: uppercase;
 
-    &:first-child {
+    &:first-of-type {
       border-top-left-radius: 4px;
       border-right: 1px solid #fff;
     }
 
-    &:last-child {
+    &:last-of-type {
       border-top-right-radius: 5px;
       border-left: 1px solid #fff;
     }
@@ -31,17 +31,17 @@ export const TransactionTable = styled.table`
   & tr {
     height: 60px;
 
-    &:nth-child(even) {
+    &:nth-of-type(even) {
           background-color: #ecf1f4;
     }
 
-    &:last-child {
+    &:last-of-type {
       border-bottom-radius: 4px;
 
       & td {
         border-bottom: collapse;
 
-        &:first-child {
+        &:first-of-type {
           border-bottom-left-radius: 4px;
         }
       }
@@ -52,7 +52,7 @@ export const TransactionTable = styled.table`
     text-align: center;
     border-left: 1px solid #e4e4e4;
 
-    &:first-child {
+    &:first-of-type {
       border-left: none;
       padding-left: 80px;
       text-align: left;
@@ -60,7 +60,7 @@ export const TransactionTable = styled.table`
       text-transform: capitalize;
     }
 
-    &:last-child {
+    &:last-of-type {
       border-right: none;
       border-bottom-right-radius: 4px;
     }
